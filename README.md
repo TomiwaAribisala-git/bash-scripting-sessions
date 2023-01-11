@@ -1,3 +1,3 @@
 # Shell Scripts
 
-This repo is a collection of beginner shell script samples.
+This repository is a collection of beginner shell script samples.
