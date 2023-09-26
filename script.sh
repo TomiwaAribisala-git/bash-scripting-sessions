@@ -1,15 +1,18 @@
-mkdir lunar-mission
 
-rocket-add lunar-mission
+mission_name = lunar-mission
 
-rocket-start-power lunar-mission
+mkdir $mission_name
 
-rocket-internal-power lunar-mission
+rocket-add $mission_name
 
-rocket-start-sequence lunar-mission
+rocket-start-power $mission_name
 
-rocket-start-engine lunar-mission
+rocket-internal-power $mission_name
 
-rocket-lift-off lunar-mission
+rocket-start-sequence $mission_name
 
-rocket-status lunar-mission
+rocket-start-engine $mission_name
+
+rocket-lift-off $mission_name
+
+rocket-status $mission_name
