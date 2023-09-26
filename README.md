@@ -1,3 +1,3 @@
-# Shell Scripts
+# Bash Scripting
 
-# This repo is a collection of beginner bash script samples 
+This repository is a journal of my sessions learning bash scripting and a collection of bash script samples.
