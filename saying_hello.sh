@@ -4,6 +4,6 @@
 
 echo "reading user input"
 
-read -p "What is your name?" name
+read -p "What is your name? " name
 
 echo "Hello, $name, nice to meet you!"
