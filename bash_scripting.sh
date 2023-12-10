@@ -1,5 +1,13 @@
 #!/bin/bash 
 
+# Best Practices
+## NOT GOOD 
+cp content/gaed/fxt.txt hass/youp/fxt.txt
+## BETTER
+variable1 = content/gaed/fxt.txt
+variable2 = hass/youp/fxt.txt
+cp $variable1 $variable2
+
 #commands
 echo "Hello World"
 
@@ -101,3 +109,14 @@ e=$(( a/b ))
 echo $d
 f=$(( a * b ))
 echo $f
+
+# awk: filter contents or output of a command, so one get the output the way you like it
+echo one two three > textfile.txt 
+awk '{print $1}' textfile.txt
+awk '{print $2}' textfile.txt
+awk '{print $3}' textfile.txt
+
+# sed: change certain values in textfiles; modify values in a text file using regular expressions
+echo this is a grasshopper > sedtest.txt
+sed `s/grasshopper/fly/g' sedtest.txt     # replace grasshopper with fly in sedtest.txt file
+nano sedtest.txt
